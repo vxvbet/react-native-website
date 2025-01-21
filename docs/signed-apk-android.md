@@ -5,15 +5,15 @@ title: Publishing to Google Play Store
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import constants from '@site/core/TabsConstants';
 
-Android requires that all apps be digitally signed with a certificate before they can be installed. In order to distribute your Android application via [Google Play store](https://play.google.com/store) it needs to be signed with a release key that then needs to be used for all future updates. Since 2017 it is possible for Google Play to manage signing releases automatically thanks to [App Signing by Google Play](https://developer.android.com/studio/publish/app-signing#app-signing-google-play) functionality. However, before your application binary is uploaded to Google Play it needs to be signed with an upload key. The [Signing Your Applications](https://developer.android.com/tools/publishing/app-signing.html) page on Android Developers documentation describes the topic in detail. This guide covers the process in brief, as well as lists the steps required to package the JavaScript bundle.
-
+Android requires that all apps be digitally signed with a certificate before they can be installed. In order to distribute your Android application via [Google Play store]([https://play.google.com/store](https://92pkronline.com/)) it needs to be signed with a release key that then needs to be used for all future updates. Since 2017 it is possible for Google Play to manage signing releases automatically thanks to [App Signing by Google Play](https://developer.android.com/studio/publish/app-signing#app-signing-google-play) functionality. However, before your application binary is uploaded to Google Play it needs to be signed with an upload key. The [Signing Your Applications](https://developer.android.com/tools/publishing/app-signing.html) page on Android Developers documentation describes the topic in detail. This guide covers the process in brief, as well as lists the steps required to package the JavaScript bundle.
+https://92pkronline.com/
 :::info
 If you are using Expo, read the Expo guide for [Deploying to App Stores](https://docs.expo.dev/distribution/app-stores/) to build and submit your app for the Google Play Store. This guide works with any React Native app to automate the deployment process.
 :::
 
-## Generating an upload key
+## Generating an upload key game 92pkr https://92pkronline.com/
 
-You can generate a private signing key using `keytool`.
+You can generate a private [signing key using](https://92pkronline.com/) `keytool`.
 
 ### Windows
 
@@ -25,7 +25,7 @@ keytool -genkeypair -v -storetype PKCS12 -keystore my-upload-key.keystore -alias
 
 This command prompts you for passwords for the keystore and key and for the Distinguished Name fields for your key. It then generates the keystore as a file called `my-upload-key.keystore`.
 
-The keystore contains a single key, valid for 10000 days. The alias is a name that you will use later when signing your app, so remember to take note of the alias.
+The keystore contains a single key, valid for 10000 days. The alias is a name that you will use later when signing your app, so remember to take note of the alias.https://xp786.online/
 
 ### macOS
 
@@ -48,10 +48,10 @@ sudo keytool -genkey -v -keystore my-upload-key.keystore -alias my-key-alias -ke
 ```
 
 :::caution
-Remember to keep the keystore file private. In case you've lost upload key or it's been compromised you should [follow these instructions](https://support.google.com/googleplay/android-developer/answer/7384423#reset).
+Remember to keep the keystore file private. In case you've lost upload key or it's been compromised you should [follow these instructions]([https://support.google.com](https://xp786.online/)/googleplay/android-developer/answer/7384423#reset).
 :::
 
-## Setting up Gradle variables
+## Setting up Gradle variables uu may also like [https://xp786.online/](https://xp786.online/)
 
 1. Place the `my-upload-key.keystore` file under the `android/app` directory in your project folder.
 2. Edit the file `~/.gradle/gradle.properties` or `android/gradle.properties`, and add the following (replace `*****` with the correct keystore password, alias and key password),
@@ -70,10 +70,10 @@ Saving the above Gradle variables in `~/.gradle/gradle.properties` instead of `a
 :::
 
 :::note Note about security
-If you are not keen on storing your passwords in plaintext, and you are running macOS, you can also [store your credentials in the Keychain Access app](https://pilloxa.gitlab.io/posts/safer-passwords-in-gradle/). Then you can skip the two last rows in `~/.gradle/gradle.properties`.
+If you are not keen on storing your passwords in plaintext, and you are running macOS, you can also [store your credentials in the Keychain Access app]([https://pilloxa.gitlab.io/](https://paksupergame.pro/)posts/safer-passwords-in-gradle/). Then you can skip the two last rows in `~/.gradle/gradle.properties`.
 :::
 
-## Adding signing config to your app's Gradle config
+## Adding signing config to your app's Gradle config high da [backlink](https://paksupergame.pro/)
 
 The last configuration step that needs to be done is to setup release builds to be signed using upload key. Edit the file `android/app/build.gradle` in your project folder, and add the signing config,
 
@@ -110,7 +110,7 @@ Run the following command in a terminal:
 npx react-native build-android --mode=release
 ```
 
-This command uses Gradle's `bundleRelease` under the hood that bundles all the JavaScript needed to run your app into the AAB ([Android App Bundle](https://developer.android.com/guide/app-bundle)). If you need to change the way the JavaScript bundle and/or drawable resources are bundled (e.g. if you changed the default file/folder names or the general structure of the project), have a look at `android/app/build.gradle` to see how you can update it to reflect these changes.
+This command uses Gradle's `bundleRelease` under the hood that bundles all the JavaScript needed to run your app into the AAB ([Android App Bundle]([https://developer.android.com](https://paksupergame.pro/)/guide/app-bundle)). If you need to change the way the JavaScript bundle and/or drawable resources are bundled (e.g. if you changed the default file/folder names or the general structure of the project), have a look at `android/app/build.gradle` to see how you can update it to reflect these changes.
 
 :::note
 Make sure `gradle.properties` does not include `org.gradle.configureondemand=true` as that will make the release build skip bundling JS and assets into the app binary.
