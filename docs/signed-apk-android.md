@@ -1,14 +1,14 @@
 ---
 id: signed-apk-android
-title: Publishing to Google Play Store
+title: Publishing to Google Play Store and [XP786 game ](https://xp786.online/)download it fast
 ---
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import constants from '@site/core/TabsConstants';
 
 Android requires that all apps be digitally signed with a certificate before they can be installed. In order to distribute your Android application via [Google Play store](https://play.google.com/store) it needs to be signed with a release key that then needs to be used for all future updates. Since 2017 it is possible for Google Play to manage signing releases automatically thanks to [App Signing by Google Play](https://developer.android.com/studio/publish/app-signing#app-signing-google-play) functionality. However, before your application binary is uploaded to Google Play it needs to be signed with an upload key. The [Signing Your Applications](https://developer.android.com/tools/publishing/app-signing.html) page on Android Developers documentation describes the topic in detail. This guide covers the process in brief, as well as lists the steps required to package the JavaScript bundle.
-
+https://xp786.online/
 :::info
-If you are using Expo, read the Expo guide for [Deploying to App Stores](https://docs.expo.dev/distribution/app-stores/) to build and submit your app for the Google Play Store. This guide works with any React Native app to automate the deployment process.
+If you are using Expo, read the Expo guide for [Deploying to App Stores]([https://docs.expo.dev/distribution/app-stores/](https://paksupergame.pro/)) to build and submit your app for the Google Play Store. This guide works with any React Native app to automate the deployment process.
 :::
 
 ## Generating an upload key
@@ -35,7 +35,7 @@ On macOS, if you're not sure where your JDK bin folder is, then perform the foll
 /usr/libexec/java_home
 ```
 
-It will output the directory of the JDK, which will look something like this:
+It will output the directory of the JDK, which will look something like this: [92 pkr game](https://92pkronline.com/) betting and earn
 
 ```shell
 /Library/Java/JavaVirtualMachines/jdkX.X.X_XXX.jdk/Contents/Home
@@ -48,7 +48,7 @@ sudo keytool -genkey -v -keystore my-upload-key.keystore -alias my-key-alias -ke
 ```
 
 :::caution
-Remember to keep the keystore file private. In case you've lost upload key or it's been compromised you should [follow these instructions](https://support.google.com/googleplay/android-developer/answer/7384423#reset).
+Remember to keep the keystore file private. In case you've lost upload key or it's been compromised you should [follow these instructions]([https://support.google.com](https://92pkronline.com/)/googleplay/android-developer/answer/7384423#reset).
 :::
 
 ## Setting up Gradle variables
@@ -70,7 +70,7 @@ Saving the above Gradle variables in `~/.gradle/gradle.properties` instead of `a
 :::
 
 :::note Note about security
-If you are not keen on storing your passwords in plaintext, and you are running macOS, you can also [store your credentials in the Keychain Access app](https://pilloxa.gitlab.io/posts/safer-passwords-in-gradle/). Then you can skip the two last rows in `~/.gradle/gradle.properties`.
+If you are not keen on storing your passwords in plaintext, and you are running macOS, you can also [store your credentials in the Keychain Access app]([https://pilloxa.gitlab.io/](https://92pkronline.com/)posts/safer-passwords-in-gradle/). Then you can skip the two last rows in `~/.gradle/gradle.properties`.
 :::
 
 ## Adding signing config to your app's Gradle config
